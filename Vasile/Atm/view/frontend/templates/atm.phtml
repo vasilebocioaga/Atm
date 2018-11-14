@@ -1,0 +1,18 @@
+<h1>Atm Withdraw Cash</h1>
+
+<div id="atm_inpun">
+    <input id="ammount_atm" name="Ammount" type="text">
+    <button class="button" name="WITHDRAW" id="atm_withdraw">WITHDRAW</button>
+
+</div>
+<div id="atm_output"></div>
+
+<script type="text/x-magento-init">
+            {
+                "#atm_withdraw": {
+                    "Vasile_Atm/js/atmcall": {
+                        "urlToCall": "<?php /* @escapeNotVerified */ echo $block->getFormAction(); ?>"
+                    }
+                }
+            }
+</script>
